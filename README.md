@@ -16,21 +16,6 @@ git clone https://github.com/codebasebo/t-rex-game.git
 cd t-rex-game
 ```
 
-### Plan for README update:
-1. Improve structure
-2. Add installation steps
-3. Add game controls
-4. Add features list
-5. Add development setup
-6. Add screenshots/demo section
-
-```markdown
-
-
-# T-Rex Runner Game Clone
-
-A classic endless runner game built with pure JavaScript, HTML, and CSS. This project recreates the famous Chrome dinosaur game that appears when you're offline.
-
 ## Features
 - Pure JavaScript implementation
 - No frameworks or Canvas required
