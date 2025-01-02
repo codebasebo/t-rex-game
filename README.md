@@ -31,11 +31,7 @@ cd t-rex-game
 ```
 
 ## How to Play
-1. Open 
-
-index.html
-
- in your browser
+1. Open index.html in your browser
 2. Press SPACE to start
 3. Press SPACE to jump over obstacles
 4. Avoid cacti to survive
