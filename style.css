@@ -1,26 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @keyframes slideright {
     from {
-        background-position: 70000%;
+        background-position: 10000%;
     }
 
     to {
-        background-position: 0%;
+        background-position: 0;
     }
 }
 
 #desert {
-    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 300px;
     background-image: url('t-rex-background.png');
-    height: 200px;
+    background-repeat: repeat-x;
+    background-size: 1000px 300px;
+    animation: slideright 200s infinite linear;
+    overflow: hidden;
+}
+
+.grid {
+    position: relative;
     width: 100%;
-    animation: slideright 600s infinite linear;
+    height: 100%;
+}
+
+#alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #535353;
+    z-index: 10;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #535353;
 }
 
 .dino {
-    background-image: url('t-rex.png');
-    height: 60px;
-    width: 60px;
     position: absolute;
     bottom: 0;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background-image: url('t-rex.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
 
+.obstacle {
+    background-image: url('cacti.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #535353;
+}
+
+@media (max-width: 768px) {
+    #desert {
+        height: 200px;
+    }
+
+    .dino,
+    .obstacle {
+        transform: scale(0.8);
+    }
 }
