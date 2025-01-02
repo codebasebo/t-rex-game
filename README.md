@@ -1,4 +1,4 @@
-# T-Rex Runner Game Clone
+# T-Rex Runner Game 
 
 A classic endless runner game built with pure JavaScript, HTML, and CSS. This project recreates the famous Chrome dinosaur game that appears when you're offline.
 
